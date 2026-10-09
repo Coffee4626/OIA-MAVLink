@@ -1,0 +1,14 @@
+{
+    "broker_ip": "localhost",
+    "broker_port": 8883,
+    "username": "yourusernamehere",
+    "password": "yourpasswordhere",
+    "ca_cert_path": "/path/ca.crt",
+    "manufacturer": "DefaultCorp",
+    "serial_number": "drone01",
+    "version": "1.0.0",
+    "publish_interval": 1000,
+    "heartbeat_timeout": 3,
+    "bind_address": "127.0.0.1",
+    "udp_port": 14551
+}
