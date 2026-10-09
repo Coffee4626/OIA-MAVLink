@@ -40,6 +40,8 @@ sudo chmod 640 /etc/mosquitto/certs/*
 echo ""
 echo "configuring auth and tls"
 sudo mosquitto_passwd -b -c /etc/mosquitto/passwd "$MQTT_USER" "$MQTT_PASS"
+sudo chown mosquitto:mosquitto /etc/mosquitto/passwd
+sudo chmod 640 /etc/mosquitto/passwd
 sudo tee /etc/mosquitto/conf.d/drone.conf > /dev/null << CONF
 listener 8883
 cafile   /etc/mosquitto/certs/ca.crt
